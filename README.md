@@ -1,7 +1,7 @@
 # srp
-<h1>30 vanilla javascript coding challenge</h1>
+30 vanilla javascript coding challenge
 
-<h2>The things i've learned through out the days:<h2>
+<strong>The things i've learned through out the days:</strong>
 
 <strong>Challenge 1: </strong> <br />
 At the start of the challenge at day 1, i've had to make a drum kit based on key events. The things i've learned during this challenge is working with key events, audio elements, javascript transition solutions and dynamically working with classes en data-attributes.
