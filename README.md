@@ -20,3 +20,6 @@ Challenge 4 was all about different ways of filtering and sorting array values. 
 In this challenge i learned a lot about the flex property and all the possibilities of flex. In this challenge i made a flex based sort of portfolio with animations based on clicks. The javascript subject material was about making decisions based on property names and adding event listeners to trigger actions on click and transitionend.
 
 <strong>Challenge 6 Ajax type ahead </strong> <br />
+In this challenge i've learned a little bit about regex and how to fetch data out of an external source, and putting these data into useful arrays and displaying them with styling. In my opinion this one was the toughest yet, but i'm very excited to learn more about regex and putting external data to good use.
+
+<strong>Challenge 7 Array cardio day 2 </strong> <br />
