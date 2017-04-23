@@ -5,8 +5,6 @@
 
 <strong>Challenge 1: Making a drum kit with Javascript </strong> <br />
 At the start of the challenge at day 1, i've had to make a drum kit based on key events. The things i've learned during this challenge is working with key events, audio elements, javascript transition solutions and dynamically working with classes en data-attributes.
-<strong>Challenge 1 Javascript drum kit: </strong> <br />
-At the start of the challenge at day 1, i had to make a drum kit based on key events. The things i've learned during this challenge is working with key events, audio elements, javascript transition solutions and dynamically working with classes en data-attributes.
 
 <strong> Challenge 2 Javascript clock: </strong> <br />
 Challenge 2 was all about making a clock bases on the Javascript Date function. During this challenge i had to gather the time in hours, minutes and seconds and converting them into degrees. The degrees where necessary to make to clock rotate.
@@ -19,3 +17,6 @@ In this challenge i learned to use variables in css, working with suffixes and u
 Challenge 4 was all about different ways of filtering and sorting array values. During this challenge i learned alot about how to approach arrays in multiple ways and how to setup a quick but good ES2016 function. During this challenge the short version for loops also became clearer to me, i now understand the a > b ? 1 : -1; which just means if a is greater than b return 1, else return -1. This is also a way to sort an array in alphabetical order.
 
 <strong>Challenge 5 Flex panels image gallery: </strong> <br />
+In this challenge i learned a lot about the flex property and all the possibilities of flex. In this challenge i made a flex based sort of portfolio with animations based on clicks. The javascript subject material was about making decisions based on property names and adding event listeners to trigger actions on click and transitionend.
+
+<strong>Challenge 6 Ajax type ahead </strong> <br />
