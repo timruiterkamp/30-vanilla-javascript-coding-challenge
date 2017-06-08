@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<script>
+const canvas = document.querySelector("#draw");
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth; // sets canvas to full screen width
+canvas.height = window.innerHeight;// sets canvas to full screen height
+ctx.strokeStyle = '#BADA55';
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+ctx.lineWidth = '100'; // sets the thickness of the line
+ctx.globalCompositeOperation = 'multiply'; //Makes it possible that when colors override, the will multiply themselves with the overridden color.
+
+let isDrawing = false;
+let lastX = 0;
+let lastY = 0;
+let hue = 0;
+let direction = true;
+
+function draw(e) {
+  if(!isDrawing) return; // stop function when person isn't clicking
+
+  console.log(e);
+  ctx.beginPath(); // sets starting point of mouse click
+  ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`; // Changes hue color the longer the mouse is down
+  //start from
+  ctx.moveTo(lastX, lastY);
+  //move to
+  ctx.lineTo(e.offsetX, e.offsetY); // Makes a line from starting point to end point
+  ctx.stroke();
+  [lastX, lastY] = [e.offsetX, e.offsetY] // Makes a line from starting point to end point
+  hue++
+
+  if(hue >= 360) {
+    // Changes the hue color if it has reached it maximum
+    hue = 0;
+  }
+  if(ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+    // Changes the thickness of the lineWidth when it hits 100 or 1;
+    direction = !direction;
+  }
+
+  // Changes if the lineWidth should count from 1 to 100 of from 100 to 1;
+  if(direction) {
+    ctx.lineWidth++;
+  } else {
+    ctx.lineWidth--;
+  }
+}
+
+canvas.addEventListener('mousemove', draw);
+canvas.addEventListener('mousedown', (e) => {
+  isDrawing = true;
+  [lastX, lastY] = [e.offsetX, e.offsetY]
+});
+canvas.addEventListener('mouseup', () => isDrawing = false);
+canvas.addEventListener('mouseout', () => isDrawing = false);
+</script>
+
+<style>
+  html, body {
+    margin:0;
+  }
+</style>
+
+</body>
+</html>
